@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/cafeSOLO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="150dp"
+        android:text="@string/cafe_solo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/menosCafeSolo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="@string/menos"
+        android:onClick="menosCafeSolo"
+        app:layout_constraintBaseline_toBaselineOf="@+id/cafeSOLO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/totalCafeSolo"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="@string/_0"
+        android:textAlignment="center"
+        app:layout_constraintBaseline_toBaselineOf="@+id/masCafeSolo"
+        app:layout_constraintStart_toEndOf="@+id/menosCafeSolo" />
+
+    <Button
+        android:id="@+id/masCafeSolo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:onClick="masCafeSolo"
+        android:text="@string/mas"
+        app:layout_constraintBaseline_toBaselineOf="@+id/menosCafeSolo"
+        app:layout_constraintStart_toEndOf="@+id/totalCafeSolo" />
+
+    <TextView
+        android:id="@+id/cafeCORTADO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:text="@string/cafe_cortado"
+        app:layout_constraintBottom_toTopOf="@+id/cafeCONLECHE"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cafeSOLO" />
+
+    <Button
+        android:id="@+id/menosCafeCortado"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="@string/menos"
+        android:onClick="menosCafeCortado"
+        app:layout_constraintBaseline_toBaselineOf="@+id/cafeCORTADO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/totalCafeCortado"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="@string/_0"
+        android:textAlignment="center"
+        app:layout_constraintBaseline_toBaselineOf="@+id/menosCafeCortado"
+        app:layout_constraintStart_toEndOf="@+id/menosCafeCortado" />
+
+    <Button
+        android:id="@+id/masCafeCortado"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="@string/mas"
+        android:onClick="masCafeCortado"
+        app:layout_constraintBaseline_toBaselineOf="@+id/cafeCORTADO"
+        app:layout_constraintStart_toEndOf="@+id/totalCafeCortado" />
+
+
+    <TextView
+        android:id="@+id/cafeCONLECHE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="150dp"
+        android:text="@string/cafe_con_leche"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/menosCafeConLeche"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="@string/menos"
+        android:onClick="menosCafeConLeche"
+        app:layout_constraintBaseline_toBaselineOf="@+id/cafeCONLECHE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/totalCafeConLeche"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="@string/_0"
+        android:textAlignment="center"
+        app:layout_constraintBaseline_toBaselineOf="@+id/menosCafeConLeche"
+        app:layout_constraintStart_toEndOf="@+id/menosCafeConLeche" />
+
+    <Button
+        android:id="@+id/masCafeConLeche"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="@string/mas"
+        android:onClick="masCafeConLeche"
+        app:layout_constraintBaseline_toBaselineOf="@+id/totalCafeConLeche"
+        app:layout_constraintStart_toEndOf="@+id/totalCafeConLeche" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

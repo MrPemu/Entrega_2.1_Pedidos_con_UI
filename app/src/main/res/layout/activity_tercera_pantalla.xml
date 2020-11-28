@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TerceraPantalla">
+
+
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/nombre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNombre"
+        android:layout_width="240dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="24dp"
+        android:ems="10"
+        android:hint="@string/tu_nombre"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/nombre"
+        app:layout_constraintStart_toEndOf="@+id/nombre" />
+
+    <TextView
+        android:id="@+id/direccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/direccion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombre" />
+
+    <EditText
+        android:id="@+id/editTextDireccion"
+        android:layout_width="240dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/tu_direccion"
+        android:inputType="textCapSentences|textMultiLine"
+        app:layout_constraintStart_toEndOf="@+id/direccion"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNombre" />
+
+
+    <TextView
+        android:id="@+id/telefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/telefono"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/direccion" />
+
+
+    <EditText
+        android:id="@+id/editTextTelefono"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/tu_telefono"
+        android:inputType="phone"
+        app:layout_constraintBaseline_toBaselineOf="@+id/telefono"
+        app:layout_constraintStart_toEndOf="@+id/telefono" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="109dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@+id/editTextTelefono"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDireccion" />
+</androidx.constraintlayout.widget.ConstraintLayout>

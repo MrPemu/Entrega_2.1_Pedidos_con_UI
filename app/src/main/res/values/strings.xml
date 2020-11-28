@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Entrega 2.1 Pedidos</string>
+    <string name="cart">carrito</string>
+    <string name="delete">eliminar</string>
+    <string name="cafe_cortado">Café CORTADO</string>
+    <string name="cafe_con_leche">Café CON LECHE</string>
+    <string name="cafe_solo">Café SOLO</string>
+    <string name="menos">-</string>
+    <string name="mas">+</string>
+    <string name="_0">0</string>
+    <string name="modo_de_entrega">Modo de Entrega</string>
+    <string name="reparto_a_domicilio">Reparto a domicilio</string>
+    <string name="recoger_en_local">Recoger en local</string>
+    <string name="hora">Seleccionar Hora de entrega</string>
+    <string name="fecha">Seleccionar Fecha de entrega</string>
+    <string name="pick_time">09:15</string>
+    <string name="time_toast">Time</string>
+    <string name="timepicker">timePicker</string>
+    <string name="time_button">Time</string>
+    <string name="date_button">Date</string>
+    <string name="datepicker">datePicker</string>
+    <string name="date">Date</string>
+    <string name="nombre">Nombre</string>
+    <string name="direccion">Dirección</string>
+    <string name="telefono">Teléfono</string>
+    <string name="editTextNombre">Tu nombre</string>
+    <string name="editTextDireccion">Tu dirección</string>
+    <string name="editTextTelefono">Tu teléfono</string>
+    <string name="tu_nombre">Tu nombre</string>
+    <string name="tu_direccion">Tu dirección</string>
+    <string name="tu_telefono">Tu teléfono</string>
+    <string-array name="telefonos">
+        <item>Casa</item>
+        <item>Trabajo</item>
+        <item>Móvil</item>
+        <item>Otro</item>
+    </string-array>
+</resources>
